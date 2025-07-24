@@ -1,0 +1,39 @@
+@import '../../vars';
+
+.nav {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 25px 5%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .navContent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .reseaux{
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+    
+            .reseau {
+                width: 20px;
+            }
+        }
+
+        .lists {
+            display: flex;
+            gap: 25px;
+
+            .list {
+
+                .link {
+                    text-decoration: none;
+                    color: $base;
+                }
+            }
+        }
+    }
+}
