@@ -30,6 +30,13 @@ export default function Home() {
           <Image src={react} alt="iconReact" width={25} />
           <Image src={sass} alt="iconSass" width={25} />
         </div>
+        <div className={styles.projets}>
+          <div className={styles.projet}></div>
+          <div className={styles.projet}></div>
+          <div className={styles.projet}></div>
+          <div className={styles.projet}></div>
+          <div className={styles.projet}></div>
+        </div>
         {/* <p className={styles.slogan}>DevIn<span>Progress</span></p>
         <div id={styles.progressBloc}><div className={styles.progress}></div></div> */}
       </main>
