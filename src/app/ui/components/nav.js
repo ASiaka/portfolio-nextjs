@@ -9,8 +9,12 @@ export default function Nav() {
         <nav className={styles.nav}>
             <div className={styles.navContent}>
                 <div className={styles.reseaux} >
-                    <FontAwesomeIcon icon={faLinkedin} className={styles.reseau}/>
-                    <FontAwesomeIcon icon={faGithub} className={styles.reseau}/>
+                    <Link href="https://www.linkedin.com/in/siakaandhum/" className={styles.link} target="blank">
+                        <FontAwesomeIcon icon={faLinkedin} className={styles.reseau}/>
+                    </Link>
+                    <Link href="https://github.com/ASiaka" className={styles.link} target="blank">
+                        <FontAwesomeIcon icon={faGithub} className={styles.reseau}/>
+                    </Link>
                 </div>
                 <ul className={styles.lists}>
                     <li className={styles.list}><Link href="" className={styles.link}>Acceuil</Link></li>

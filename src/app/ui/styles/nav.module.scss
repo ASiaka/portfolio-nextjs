@@ -1,4 +1,4 @@
-@import '../../vars';
+@use '../../vars';
 
 .nav {
     box-sizing: border-box;
@@ -15,11 +15,16 @@
 
         .reseaux{
             display: flex;
-            gap: 10px;
+            gap: 5px;
             justify-content: center;
-    
-            .reseau {
-                width: 20px;
+            
+            .link {
+                text-decoration: none;
+                color: vars.$base;
+                
+                .reseau {
+                    font-size: 20px;
+                }
             }
         }
 
@@ -31,7 +36,7 @@
 
                 .link {
                     text-decoration: none;
-                    color: $base;
+                    color: vars.$base;
                 }
             }
         }
