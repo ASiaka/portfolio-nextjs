@@ -9,20 +9,23 @@ import react from "../../public/img/react.svg";
 import sass from "../../public/img/sass.svg";
 import Nav from "./ui/components/nav";
 import { useState } from "react";
+import Parcours from "./parcours/parcours";
+import Projets from "./projets/page";
+import Contact from "./contact/page";
 
 export default function Home() {
   const [level, setLevel] = useState();
   const [colorLevel, setColorLevel] = useState();
   
   return (
-    <div className={styles.page}>
+    <div id="acceuil" className={styles.acceuil}>
       <Nav />
       <main className={styles.main}>
         <div className={styles.titleContent}>
-          <p className={styles.nom}>ASia</p>
+          <p className={styles.nom} style={{color: colorLevel}}>ASia</p>
           <div className={styles.subtitleContent}>
             <p className={styles.activite}>Développeur web front-end</p>
-            <p className={styles.specialite}>Spécialisé ReactJs - Javascript</p>
+            <p className={styles.specialite}>Spécialisé <span  style={{color: "#00DCFF"}}>ReactJs</span> - <span style={{color: "#F7E018"}}>Javascript</span></p>
           </div>
         </div>
         <div className={styles.progressContent}>
@@ -95,13 +98,16 @@ export default function Home() {
           />
         </div>
         <div className={styles.projets}>
-          <div className={styles.projet}></div>
-          <div className={styles.projet}></div>
-          <div className={styles.projet}></div>
-          <div className={styles.projet}></div>
-          <div className={styles.projet}></div>
+          <div className={styles.projet } style={{boxShadow: `0px 0px 3px -2px ${colorLevel}`}}></div>
+          <div className={styles.projet } style={{boxShadow: `0px 0px 3px -2px ${colorLevel}`}}></div>
+          <div className={styles.projet } style={{boxShadow: `0px 0px 3px -2px ${colorLevel}`}}></div>
+          <div className={styles.projet } style={{boxShadow: `0px 0px 3px -2px ${colorLevel}`}}></div>
+          <div className={styles.projet } style={{boxShadow: `0px 0px 3px -2px ${colorLevel}`}}></div>
         </div>
       </main>
+      <Parcours />
+      <Projets />
+      <Contact />
     </div>
   );
 }

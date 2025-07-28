@@ -17,10 +17,10 @@ export default function Nav() {
                     </Link>
                 </div>
                 <ul className={styles.lists}>
-                    <li className={styles.list}><Link href="" className={styles.link}>Acceuil</Link></li>
-                    <li className={styles.list}><Link href="" className={styles.link}>Parcours</Link></li>
-                    <li className={styles.list}><Link href="" className={styles.link}>Projets</Link></li>
-                    <li className={styles.list}><Link href="" className={styles.link}>Contact</Link></li>
+                    <li className={styles.list}><Link href="#acceuil" className={styles.link}>Acceuil</Link></li>
+                    <li className={styles.list}><Link href="#parcours" className={styles.link}>Parcours</Link></li>
+                    <li className={styles.list}><Link href="#projets" className={styles.link}>Projets</Link></li>
+                    <li className={styles.list}><Link href="#contact" className={styles.link}>Contact</Link></li>
                 </ul>
             </div>
         </nav>

@@ -1,12 +1,14 @@
 @use '../../vars';
 
 .nav {
-    box-sizing: border-box;
     width: 100%;
+    box-sizing: border-box;
+    z-index: 5;
     padding: 25px 5%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
+    background-color: #F5F5F599;
 
     .navContent {
         display: flex;
@@ -20,7 +22,7 @@
             
             .link {
                 text-decoration: none;
-                color: vars.$base;
+                color: vars.$blue;
                 
                 .reseau {
                     font-size: 20px;
@@ -36,7 +38,7 @@
 
                 .link {
                     text-decoration: none;
-                    color: vars.$base;
+                    color: vars.$blue;
                 }
             }
         }

@@ -1,24 +1,23 @@
 @use 'vars';
 
-.page {
+.acceuil {
     width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
     .main {
+        width: 100%;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background-color: vars.$gray;
 
         .titleContent {
             display: flex;
             gap: 10;
             align-items: center;
             font-style: italic;
+            color: vars.$blue;
     
             .nom {
                 font-size: 70px;
@@ -61,6 +60,7 @@
                 box-sizing: content-box;
                 
                 .level {
+                    width: 0%;
                     height: 100%;
                     border-radius: 3px 0 0 3px;
                     transition: width 1s;
