@@ -1,3 +1,5 @@
+'use client'
+
 import styles from "@/app/ui/styles/nav.module.scss";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -18,7 +20,7 @@ export default function Nav() {
                 </div>
                 <ul className={styles.lists}>
                     <li className={styles.list}><Link href="#acceuil" className={styles.link}>Acceuil</Link></li>
-                    <li className={styles.list}><Link href="#parcours" className={styles.link}>Parcours</Link></li>
+                    <li className={styles.list}><Link href="#services" className={styles.link}>Services</Link></li>
                     <li className={styles.list}><Link href="#projets" className={styles.link}>Projets</Link></li>
                     <li className={styles.list}><Link href="#contact" className={styles.link}>Contact</Link></li>
                 </ul>

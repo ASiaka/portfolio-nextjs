@@ -1,0 +1,141 @@
+@use '../vars';
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template: 8fr 2fr / 1fr;
+    
+    .servicesTop {
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        grid-area: 1 / 1 / 2 / 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        
+        .titleContent {
+            padding-top: 70px;
+            display: flex;
+            gap: 10;
+            align-items: center;
+            font-style: italic;
+            color: vars.$blue;
+        
+            .nom {
+                font-size: 70px;
+                font-weight: 900;
+                transition: color 1s;
+            }
+        
+            .subtitleContent {
+                margin-bottom: -18px;
+        
+                .activite, .specialite {
+                    font-size: 16px;
+                    font-weight: 900;
+                    line-height: 20px;
+                }
+            }
+        }
+            
+        .progressContent {
+            width: 465px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        
+        
+            .devise {
+                font-size: 12px;
+                font-weight: 500;
+                font-style: italic;
+            }
+        
+            #levelBloc {
+                // position: fixed;
+                // bottom: 80px;
+                width: 355px;
+                height: 7px;
+                padding: 1px;
+                // border: rgb(205, 205, 205) 1px solid;
+                border: vars.$base 1px solid;
+                border-radius: 3px;
+                box-sizing: content-box;
+                
+                .level {
+                    width: 0%;
+                    height: 100%;
+                    border-radius: 3px 0 0 3px;
+                    transition: width 1s;
+                    // background-color: rgb(205, 205, 205);
+                    background-color: vars.$base;
+                }
+                .level60 {
+                    width: 60%;
+                }
+                .level50 {
+                    width: 50%;
+                }
+                // .level40 {
+                //     width: 40%;
+                // }
+                // .level30 {
+                //     width: 30%;
+                // }
+                // .level20 {
+                //     width: 20%;
+                // }
+                .level0 {
+                    width: 0%;
+                    height: 7px;
+                    border-radius: 3px 0 0 3px;
+                    transition: width 1s;
+                    // background-color: rgb(205, 205, 205);
+                    background-color: vars.$base;
+                }
+            }
+        }
+            
+        .languages {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+    }
+
+    .servicesBottom {
+        width: 100%;
+        height: 100%;
+        background-color: vars.$blue;
+        grid-column: 1 / 2;
+        grid-row: 2 / 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .projets {
+            display: flex;
+            gap: 15px;
+            // position: absolute;
+            // bottom: 50px;
+            // left: initial;
+
+            .projet {
+                width: 150px;
+                height: 100px;
+                // background-color: rgba(255, 255, 255, 0.7);
+                // background-color: vars.$gray;
+                background-color: white;
+                // margin-top: 50px;
+                border-radius: 5px;
+            }
+        }
+    }
+
+}

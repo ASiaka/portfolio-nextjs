@@ -1,3 +1,5 @@
+'use client'
+
 import styles from "@/app/contact/contact.module.scss";
 import { faGithub, faGithubAlt, faGithubSquare, faLinkedinIn, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
