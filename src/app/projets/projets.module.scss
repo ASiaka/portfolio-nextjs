@@ -1,10 +1,102 @@
 @use '../vars';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 .projets {
     width: 100%;
     height: 100vh;
     background-color: vars.$gray;
+    color: vars.$blue;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+
+    .projetsContent {
+        width: 80%;
+        height: 70%;
+        max-width: 1000px;
+        // background-color: aquamarine;
+        display: grid;
+        gap: 15px;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 50px repeat(5, 1fr);
+
+        .titleContent {
+            grid-area: 1 / 1 / 2 / 7;
+            // background-color: white;
+            color: vars.$blue;
+            padding-left: 15px;
+
+            .title {
+                font-size: 25px;
+                font-weight: 900;
+                margin-bottom: 5px;
+            }
+
+            .subTitle {
+
+            }
+        }
+
+        .projet {
+            padding: 15px;
+            background-color: white;
+            box-shadow: 0 0 10px -10px #2f4558;
+
+            .title {
+                font-size: 1.5em;
+                font-weight: bold;
+                margin-bottom: 15px;
+            }
+
+            .paragraph {
+                line-height: 20px;
+            }
+
+            .button {
+                width: 150px;
+                height: 40px;
+                border-radius: 5px;
+                border: none;
+                background-color: rgba(165, 42, 42, 0.8);
+                color: vars.$gray;
+                margin-top: 15px;
+                transition: 1.3s;
+
+                &:hover {
+                    background-color: brown;
+                    transition: 1.3s;
+                }
+            }
+        }
+
+        .projetOne {
+            // background-color: yellow;
+            grid-column-start: 1;
+            grid-column-end: span 3;
+            grid-row-start: 2;
+            grid-row-end: 5;
+        }
+        .projetTwo {
+            // background-color: green;
+            grid-column-start: 4;
+            grid-column-end: 7;
+            grid-row-start: 2;
+            grid-row-end: span 3;
+        }
+        .projetThree {
+            // background-color: blue;
+            grid-column: 1 / span 2;
+            grid-row: 5 / span 2;
+        }
+        .projetFour {
+            // background-color: red;
+            grid-area: 5 / 3 / 7 / 5;
+        }
+        .projetFive {
+            // background-color: orange;
+            grid-area: 5 / 5 / span 2 / span 2;
+        }
+    }
 }
