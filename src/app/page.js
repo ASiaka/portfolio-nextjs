@@ -8,7 +8,7 @@ import Contact from "./contact/page";
 export default function Home() {
   
   return (
-    <div id="acceuil" className={styles.acceuil}>
+    <div className={styles.home}>
       <Nav />
       <Acceuil />
       <Services />

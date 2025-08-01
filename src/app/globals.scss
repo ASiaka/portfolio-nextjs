@@ -1,8 +1,28 @@
 @use 'vars';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
 
-body {
-  // font-family: 'Montserrat', sans-serif;
-  font-family: sans-serif;
-  color: vars.$base;
+html {
+  font-size: 16px;
+  
+  @media (max-width: 700px) {
+    font-size: 13px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 10px;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 7px;
+  }
+
+  @media (max-width: 250px) {
+    font-size: 4px;
+  }
+
+  body {
+    // font-family: 'Montserrat', sans-serif;
+    font-family: sans-serif;
+    color: vars.$base;
+  }
 }

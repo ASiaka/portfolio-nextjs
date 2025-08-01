@@ -4,9 +4,9 @@ export default function Services() {
 
     return (
         <main id="services" className={styles.services}>
-            <di className={styles.servicesTop}>
+            <div className={styles.servicesTop}>
 
-            </di>
+            </div>
             <div className={styles.servicesBottom}>
 
             </div>

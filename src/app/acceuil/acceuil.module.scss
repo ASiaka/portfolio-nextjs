@@ -1,6 +1,6 @@
 @use '../vars';
 
-.main {
+.acceuil {
     width: 100%;
     height: 100vh;
     display: grid;
@@ -10,6 +10,7 @@
         width: 100%;
         height: 100%;
         background-color: white;
+        // background-color: vars.$gray;
         grid-area: 1 / 1 / 2 / 1;
         display: flex;
         flex-direction: column;
@@ -20,37 +21,48 @@
         .titleContent {
             padding-top: 70px;
             display: flex;
-            gap: 10;
+            // gap: 10;
+            gap: 0.625rem;
             align-items: center;
             font-style: italic;
             color: vars.$blue;
         
             .nom {
-                font-size: 70px;
+                // font-size: 70px;
+                font-size: 4.3rem;
                 font-weight: 900;
                 transition: color 1s;
+
+                // @media (max-width: 700px) {
+                //     font-size: 3.3rem;
+                // }
             }
         
             .subtitleContent {
-                margin-bottom: -18px;
+                // margin-bottom: -18px;
+                margin-bottom: -1.125rem;
         
                 .activite, .specialite {
-                    font-size: 16px;
+                    // font-size: 16px;
+                    font-size: 1rem;
                     font-weight: 900;
-                    line-height: 20px;
+                    // line-height: 20px;
+                    line-height: 1.25rem;
                 }
             }
         }
             
         .progressContent {
-            width: 465px;
+            // width: 465px;
+            width: 29.1rem;
             display: flex;
             justify-content: space-between;
-            align-items: flex-end;
+            align-items: center;
         
         
             .devise {
-                font-size: 12px;
+                // font-size: 12px;
+                font-size: 0.75rem;
                 font-weight: 500;
                 font-style: italic;
             }
@@ -58,8 +70,10 @@
             #levelBloc {
                 // position: fixed;
                 // bottom: 80px;
-                width: 355px;
-                height: 7px;
+                // width: 355px;
+                width: 22rem;
+                // height: 7px;
+                height: 0.4375rem;
                 padding: 1px;
                 // border: rgb(205, 205, 205) 1px solid;
                 border: vars.$base 1px solid;
@@ -102,17 +116,24 @@
             
         .languages {
             display: flex;
-            gap: 25px;
+            // gap: 25px;
+            gap: 1.5625rem;
             justify-content: center;
             align-items: center;
-            margin-top: 50px;
+            // margin-top: 50px;
+            margin-top: 3.125rem;
+            
+            .language {
+                width: 1.5625rem;
+                height: auto;
+            }
         }
     }
 
     .servicesBottom {
         width: 100%;
         height: 100%;
-        background-color: vars.$blue;
+        background-color: vars.$gray;
         grid-column: 1 / 2;
         grid-row: 2 / 2;
         display: flex;
@@ -120,21 +141,37 @@
         align-items: center;
 
         .projets {
-            display: flex;
-            gap: 15px;
-            // position: absolute;
-            // bottom: 50px;
-            // left: initial;
+            width: 80%;
+            height: 60%;
+            display: grid;
+            grid-template: 1fr / repeat(5, 1fr);
 
             .projet {
-                width: 150px;
-                height: 100px;
+                // width: 150px;
+                // height: 100px;
                 // background-color: rgba(255, 255, 255, 0.7);
                 // background-color: vars.$gray;
                 background-color: white;
                 // margin-top: 50px;
                 border-radius: 5px;
+                margin: 5px;
             }
+
+            // .projetOne {
+
+            // }
+            // .projetTwo {
+                
+            // }
+            // .projetThree {
+                
+            // }
+            // .projetFour {
+                
+            // }
+            // .projetFive {
+                
+            // }
         }
     }
 

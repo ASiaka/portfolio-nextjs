@@ -14,7 +14,7 @@ export default function Acceuil() {
     const [colorLevel, setColorLevel] = useState();
 
     return (
-        <main className={styles.main}>
+        <main  id="acceuil" className={styles.acceuil}>
             <div className={styles.servicesTop}>
                 <div className={styles.titleContent}>
                     <p className={styles.nom} style={{color: colorLevel}}>ASia</p>
@@ -37,7 +37,8 @@ export default function Acceuil() {
                 </div>
                 <div className={styles.languages}>
                 <Image 
-                    src={html} alt="iconHtml" width={25}
+                    src={html} alt="iconHtml"
+                    className={styles.language}
                     onMouseOver={() => {
                     setLevel("level60")
                     setColorLevel("#FC4D18")
@@ -48,7 +49,8 @@ export default function Acceuil() {
                     }}
                 />
                 <Image 
-                    src={css} alt="iconCss" width={25}
+                    src={css} alt="iconCss"
+                    className={styles.language}
                     onMouseOver={() => {
                     setLevel("level50")
                     setColorLevel("#0076BE")
@@ -59,7 +61,8 @@ export default function Acceuil() {
                     }}
                 />
                 <Image 
-                    src={js} alt="iconJs" width={25}
+                    src={js} alt="iconJs"
+                    className={styles.language}
                     onMouseOver={() => {
                     setLevel("level60")
                     setColorLevel("#F7E018")
@@ -70,7 +73,8 @@ export default function Acceuil() {
                     }}
                 />
                 <Image 
-                    src={react} alt="iconReact" width={25}
+                    src={react} alt="iconReact"
+                    className={styles.language}
                     onMouseOver={() => {
                     setLevel("level60")
                     setColorLevel("#00DCFF")
@@ -81,7 +85,8 @@ export default function Acceuil() {
                     }}
                 />
                 <Image 
-                    src={sass} alt="iconSass" width={25}
+                    src={sass} alt="iconSass"
+                    className={styles.language}
                     onMouseOver={() => {
                     setLevel("level50")
                     setColorLevel("#CF649A")
@@ -95,11 +100,11 @@ export default function Acceuil() {
             </div>
             <div className={styles.servicesBottom} style={{backgroundColor: colorLevel, transition: "1.3s"}}>
                 <div className={styles.projets}>
-                    <div className={styles.projet } style={{boxShadow: `0px 0px 3px -2px ${colorLevel}`}}></div>
-                    <div className={styles.projet } style={{boxShadow: `0px 0px 3px -2px ${colorLevel}`}}></div>
-                    <div className={styles.projet } style={{boxShadow: `0px 0px 3px -2px ${colorLevel}`}}></div>
-                    <div className={styles.projet } style={{boxShadow: `0px 0px 3px -2px ${colorLevel}`}}></div>
-                    <div className={styles.projet } style={{boxShadow: `0px 0px 3px -2px ${colorLevel}`}}></div>
+                    <div className={styles.projet + " " + styles.projetOne} style={{boxShadow: `0px 0px 3px -2px ${colorLevel}`}}></div>
+                    <div className={styles.projet + " " + styles.projetTwo} style={{boxShadow: `0px 0px 3px -2px ${colorLevel}`}}></div>
+                    <div className={styles.projet + " " + styles.projetThree} style={{boxShadow: `0px 0px 3px -2px ${colorLevel}`}}></div>
+                    <div className={styles.projet + " " + styles.projetFour} style={{boxShadow: `0px 0px 3px -2px ${colorLevel}`}}></div>
+                    <div className={styles.projet + " " + styles.projetFive} style={{boxShadow: `0px 0px 3px -2px ${colorLevel}`}}></div>
                 </div>
             </div>
       </main>
