@@ -10,53 +10,104 @@
     align-items: center;
     border-top: 1px white solid;
 
+    font-size: 16px;
+  
+    // @media (max-width: 900px) {
+    //     font-size: 13px;
+    // }
+
+    // @media (max-width: 800px) {
+    //     font-size: 10px;
+    // }
+
+    // @media (max-width: 700px) {
+    //     font-size: 7px;
+    // }
+
+    // @media (max-width: 250px) {
+    //     font-size: 4px;
+    // }
+
+    @media (max-height: 640px) {
+        height: 640px;
+    }
+
     .formContent {
-        width: 550px;
-        height: 400px;
+        width: 50%;
+        max-width: 550px;
+        // width: 550px;
+        // height: 400px;
+        // width: 34.375em;
+        // height: 25em;
         background-color: white;
         padding: 35px;
+        // padding: 2.788em;
         border-radius: 10px;
         margin-top: 70px;
         margin-bottom: 100px;
+        // margin-top: 4.375em;
+        // margin-bottom: 6.25em;
         box-shadow: 0px 0px 10px -10px vars.$blue;
 
         .title {
             font-family: sans-serif;
             font-style: normal;
             font-size: 45px;
+            // font-size: 2.813em;
             // font-weight: 600;
             color: vars.$blue;
             margin-bottom: 25px;
+            // margin-bottom: 1.563rem;
+            // margin-bottom: 12.5px;
+            // margin-bottom: 0.557em;
+
+            @media (max-width: 700px) {
+                font-size: 30px;
+                margin-bottom: 20px;
+            }
+            @media (max-width: 450px) {
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
         }
 
         .form {
             width: 100%;
             display: flex;
             gap: 15px;
+            // gap: 0.938em;
             flex-direction: column;
             align-items: center;
 
             .name, .email {
                 width: 100%;
-                height: 40px;
+                // width: 40em;
+                // height: 40px;
+                height: 2.5em;
                 border-radius: 10px;
                 background-color: vars.$gray;
                 border: none;
                 padding-left: 15px;
+                // padding-left: 0.938em;
             }
 
             .message {
                 width: 100%;
-                height: 150px;
+                // width: 40em;
+                // height: 150px;
+                height: 9.375em;
                 border-radius: 10px;
                 background-color: vars.$gray;
                 border: none;
                 padding-left: 15px;
+                // padding-left: 0.938em;
             }
 
             .button {
-                width: 150px;
-                height: 40px;
+                // width: 150px;
+                // height: 40px;
+                width: 9.375em;
+                height: 2.5em;
                 border-radius: 10px;
                 border: none;
                 background-color: rgba(165, 42, 42, 0.8);
@@ -74,6 +125,7 @@
     .bottomContent {
         width: 100%;
         height: 100px;
+        // height: 6.25em;
         background-color: vars.$blue;
         position: absolute;
         bottom: 0;
@@ -84,7 +136,8 @@
 
         .reseaux{
             display: flex;
-            gap: 10px;
+            // gap: 10px;
+            gap: 0.625em;
             justify-content: center;
             
             .link {
@@ -93,6 +146,11 @@
                 
                 .reseau {
                     font-size: 25px;
+                    // font-size: 1.563em;
+
+                    @media (max-width: 700px) {
+                        font-size: 20px;
+                    }
                 }
             }
         }
