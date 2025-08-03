@@ -11,13 +11,13 @@ export default function Projets() {
                 </div>
                 <div className={styles.projet + " " + styles.projetOne}>
                     <h3 className={styles.title}>RevisionHelp</h3>
-                    <p className={styles.paragraph}>Application d'aide à la révision du vocabulaire.</p>
+                    <p className={styles.paragraph}>Application d&apos;aide à la révision du vocabulaire.</p>
                     <p className={styles.paragraph}>Réalisé en reactJs / scss.</p>
                     <button className={styles.button}>Voir</button>
                 </div>
                 <div className={styles.projet + " " + styles.projetTwo}>
                     <h3 className={styles.title}>RevisionHelp</h3>
-                    <p className={styles.paragraph}>Application d'aide à la révision du vocabulaire.</p>
+                    <p className={styles.paragraph}>Application d&apos;aide à la révision du vocabulaire.</p>
                     <p className={styles.paragraph}>Réalisé en javaScript / html / css</p>
                     <button className={styles.button}>Voir</button>
                 </div>
