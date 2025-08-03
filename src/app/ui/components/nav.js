@@ -31,18 +31,18 @@ export default function Nav() {
     }, [])
 
     return (
-        <nav className={styles.nav}>
+        <nav className={styles.nav} style={{backgroundColor: burgerMenu === true & isOpen === true ? "#2F4558" : "rgba(255, 255, 255, 0.5)", color: burgerMenu === true & isOpen === true ? "#F5F5F5" : "#2F4558", height: burgerMenu === true & isOpen === true ? "100%" : "70px"}}>
             <div className={styles.navContent}>
                 <div className={styles.reseaux} >
                     <Link href="https://www.linkedin.com/in/siakaandhum/" className={styles.link} target="blank">
-                        <FontAwesomeIcon icon={faLinkedin} className={styles.reseau}/>
+                        <FontAwesomeIcon icon={faLinkedin} className={styles.reseau} style={{color: burgerMenu === true & isOpen === true ? "#F5F5F5" : "#2F4558"}}/>
                     </Link>
                     <Link href="https://github.com/ASiaka" className={styles.link} target="blank">
-                        <FontAwesomeIcon icon={faGithub} className={styles.reseau}/>
+                        <FontAwesomeIcon icon={faGithub} className={styles.reseau} style={{color: burgerMenu === true & isOpen === true ? "#F5F5F5" : "#2F4558"}}/>
                     </Link>
                 </div>
                 {
-                    burgerMenu === true ?
+                    burgerMenu === true &&
                         (
                             isOpen === false ?
                                 <FontAwesomeIcon
@@ -57,14 +57,13 @@ export default function Nav() {
                                 onClick={() => setIsOpen(false)}
                                 />
                         )
-                    :
-                        <ul className={styles.lists}>
-                            <li className={styles.list}><Link href="#acceuil" className={styles.link}>Acceuil</Link></li>
-                            <li className={styles.list}><Link href="#services" className={styles.link}>Services</Link></li>
-                            <li className={styles.list}><Link href="#projets" className={styles.link}>Projets</Link></li>
-                            <li className={styles.list}><Link href="#contact" className={styles.link}>Contact</Link></li>
-                        </ul>
                 }
+                <ul className={styles.lists + `${burgerMenu === true ? "BM" : ""}`} style={{display: burgerMenu === true & isOpen === false ? "none" : "flex"}}>
+                    <li className={styles.list + `${burgerMenu === true ? "BM" : ""}`}><Link href="#acceuil" className={styles.link + `${burgerMenu === true ? "BM" : ""}`} onClick={() => setIsOpen(false)}>Acceuil</Link></li>
+                    <li className={styles.list + `${burgerMenu === true ? "BM" : ""}`}><Link href="#services" className={styles.link + `${burgerMenu === true ? "BM" : ""}`} onClick={() => setIsOpen(false)}>Services</Link></li>
+                    <li className={styles.list + `${burgerMenu === true ? "BM" : ""}`}><Link href="#projets" className={styles.link + `${burgerMenu === true ? "BM" : ""}`} onClick={() => setIsOpen(false)}>Projets</Link></li>
+                    <li className={styles.list + `${burgerMenu === true ? "BM" : ""}`}><Link href="#contact" className={styles.link + `${burgerMenu === true ? "BM" : ""}`} onClick={() => setIsOpen(false)}>Contact</Link></li>
+                </ul>
             </div>
         </nav>
     )
