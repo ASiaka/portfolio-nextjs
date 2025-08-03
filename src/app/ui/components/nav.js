@@ -23,6 +23,7 @@ export default function Nav() {
             if(window.innerWidth > 850) {
                 setBurgerMenu(false)
                 // console.log("superieur", window.innerWidth)
+                setIsOpen(false)
             } else {
                 setBurgerMenu(true)
                 // console.log("inferieur", window.innerWidth)
