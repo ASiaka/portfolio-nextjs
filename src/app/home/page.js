@@ -1,6 +1,7 @@
 import styles from "@/app/home/home.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCss, faCss3, faCss3Alt, faHtml5, faJs, faReact, faSass } from "@fortawesome/free-brands-svg-icons";
+import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
 
@@ -8,7 +9,8 @@ export default function Home() {
         <main id="accueil" className={styles.home}>
             <div className={styles.homeTop}>
                 <div className={styles.topContent}>
-                    {/* <h1 className={styles.title}>DevInProgress</h1> */}
+                    <FontAwesomeIcon icon={faLaptopCode} className={styles.laptop} />
+                    <h1 className={styles.title}>DevInProgress</h1>
                     <div className={styles.langages}>
                         <FontAwesomeIcon icon={faHtml5} className={styles.language} />
                         <FontAwesomeIcon icon={faCss3Alt} className={styles.language} />
