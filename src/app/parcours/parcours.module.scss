@@ -1,6 +1,6 @@
 @use '../vars';
 
-.services {
+.parcours {
     width: 100%;
     height: 100vh;
     min-width: 250px;
@@ -10,14 +10,14 @@
     display: grid;
     grid-template: 6fr 2fr / 1fr;
 
-    .servicesTop {
+    .parcoursTop {
         // width: 100%;
         // height: 100%;
         // grid-area: 1 / 1 / 2 / 1;
         background-color: vars.$gray;
     }
 
-    .servicesBottom {
+    .parcoursBottom {
         // width: 100%;
         // height: 100%;
         // grid-column: 1 / 2;

@@ -81,11 +81,11 @@ export default function Nav() {
           </li>
           <li className={`${styles.list} ${burgerMenu ? styles.listBM : ""}`}>
             <Link
-              href="#services"
+              href="#parcours"
               className={`${styles.link} ${burgerMenu ? styles.linkBM : ""}`}
               onClick={() => setIsOpen(false)}
             >
-              Services
+              Parcours
             </Link>
           </li>
           <li className={`${styles.list} ${burgerMenu ? styles.listBM : ""}`}>
