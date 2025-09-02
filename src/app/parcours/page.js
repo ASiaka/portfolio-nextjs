@@ -45,14 +45,49 @@ export default function Parcours() {
                     </div>
                     <h3 className={styles.competences}>COMPETENCES</h3>
                     <div className={styles.competencesContent}>
-                        <div className={styles.competencesBloc}>
+                        <div className={styles.competencesNiveau}>
+                            <p className={styles.niveau}>Intermédiaire</p>
                             {
                                 parcoursData.competences.map((i, k) => {
                                     return (
-                                        <p className={styles.intitule} key={k}>{i}</p>
-                                    )
-                                })
-                            }
+                                            (k === 0 || k == 1) &&
+                                            <p className={styles.intitule} key={k}>{i}</p>
+                                        )
+                                    })
+                                }
+                        </div>
+                        <div className={styles.competencesNiveau}>
+                            <p className={styles.niveau}>Débutant</p>
+                            {
+                                parcoursData.competences.map((i, k) => {
+                                    return (
+                                            k === 2 &&
+                                            <p className={styles.intitule} key={k}>{i}</p>
+                                        )
+                                    })
+                                }
+                        </div>
+                        <div className={styles.competencesNiveau}>
+                            <p className={styles.niveau}>Intermédiaire</p>
+                            {
+                                parcoursData.competences.map((i, k) => {
+                                    return (
+                                            k === 3 &&
+                                            <p className={styles.intitule} key={k}>{i}</p>
+                                        )
+                                    })
+                                }
+                        </div>
+                        <div className={styles.competencesNiveau}>
+                            <p className={styles.niveau}>Confirmé</p>
+                            {
+                                parcoursData.competences.map((i, k) => {
+                                    return (
+                                            (k === 4 || k === 5) &&
+                                            <p className={styles.intitule} key={k}>{i}</p>
+                                        )
+                                    })
+                                }
                         </div>
                     </div>
                 </div>

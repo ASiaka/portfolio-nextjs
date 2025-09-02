@@ -145,29 +145,32 @@
                 gap: 15px;
                 flex-wrap: wrap;
                 
-                .competenceBloc {
+                .competencesNiveau {
                     width: 320px;
                     // background-color: white;
                     // color: brown;
-                    padding: 5px;
+                    padding: 15px;
                     border: 1px gray solid;
                     border-radius: 5px;
                     line-height: 20px;
+                    position: relative;
+
+                    .niveau {
+                        position: absolute;
+                        right: 15px;
+                        top: -15px;
+                        background-color: vars.$base;
+                        color: white;
+                        padding: 3px 5px;
+                        border-radius: 5px;
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
         
                     .intitule {
                         font-size: 14px;
-                        font-weight: 700;
+                        font-weight: 600;
                         text-transform: uppercase;
-                    }
-        
-                    .periode {
-                        font-size: 12px;
-                        font-style: italic;
-                    }
-        
-                    .organisme {
-                        font-size: 12px;
-                        font-style: italic;
                     }
                 }
             }

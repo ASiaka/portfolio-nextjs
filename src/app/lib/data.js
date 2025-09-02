@@ -65,7 +65,7 @@ export default
       taches2: "Retouche photo et mise en page de documents",
     },
   ],
-  
+
   formations: [
     {
       intitule: "TP Développeur Web (niveau 5)",
@@ -113,13 +113,10 @@ export default
   competences:
     [
       "HTML, CSS, JAVASCRIPT",
-      "REACT, NEXT.JS, SCSS (SASS)",
-      "ReactJS",
-      "PHOTOSHOP",
-      "ILLUSTRATOR",
-      "INDESIGN",
-      "IMPRESSION OFFSET",
-      "MASSICOT",
+      "REACT, NEXTJS, SCSS (SASS)",
+      "PHP, SQL, SYMFONY, LARAVEL",
+      "PHOTOSHOP, ILLUSTRATOR, INDESIGN",
+      "IMPRESSION OFFSET, MASSICOT",
       "POSE DE COMPTEUR GAZ COMMUNICANT",
     ],
 
