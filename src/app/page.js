@@ -13,7 +13,7 @@ export default function App() {
       <Nav />
       {/* <Acceuil /> */}
       <Home />
-      {/* <Parcours /> */}
+      <Parcours />
       <Projets />
       <Contact />
     </div>

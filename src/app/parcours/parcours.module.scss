@@ -5,33 +5,53 @@
     min-height: 100vh;
     min-width: 250px;
     background-color: vars.$gray;
-    border-top: 3px white solid;
-    border-bottom: 3px white solid;
+    border-bottom: 1px gray solid;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
     display: grid;
     grid-template: 1fr / 6fr 4fr;
+    font-size: 16px;
+
+    @media (max-width: 1000px) {
+        display: block;
+    }
 
     .parcoursLeft {
-        // width: 80%;
-        // height: 80%;
-        max-width: 1200px;
-        // background-color: vars.$gray;
         background-color: vars.$blue;
-        font-family: 'Montserrat', sans-serif;
         display: flex;
         justify-content: flex-end;
-        // align-items: center;
-        padding: 25px;
+        align-items: center;
+        padding: 0 25px 25px;
         color: white;
+
+        @media (max-width: 1000px) {
+            justify-content: center;
+        }
         
         .contentLeft {
-            width: min-content;
-            padding-top: 100px;
+            max-width: 855px;
+            
+            @media (max-width: 1810px) {
+                width: min-content;
+                padding-top: 100px;
+            }
+            @media (max-width: 1000px) {
+                width: max-content;
+            }
+            @media (max-width: 905px) {
+                width: min-content;
+            }
 
             .experiences {
+                max-width: 855px;
                 // width: fit-content;
                 font-size: 25px;
                 font-weight: 900;
                 margin-bottom: 25px;
+
+                @media (max-width: 550px) {
+                    font-size: 16px;
+                }
             }
     
             .experiencesContent {
@@ -40,6 +60,10 @@
                 align-items: center;
                 gap: 15px;
                 flex-wrap: wrap;
+
+                @media (max-width: 1810px) {
+                    justify-content: center;
+                }
                 
                 .experienceBloc {
                     width: 420px;
@@ -49,6 +73,13 @@
                     border: 1px white solid;
                     border-radius: 5px;
                     line-height: 20px;
+
+                    @media (max-width: 550px) {
+                        width: 250px;
+                    }
+                    @media (max-width: 270px) {
+                        width: 230px;
+                    }
         
                     .intitule {
                         font-size: 14px;
@@ -75,34 +106,45 @@
     }
 
     .parcoursRight {
-        // width: 80%;
-        // height: 80%;
-        max-width: 1200px;
-        // background-color: vars.$base;
-        // background-color: vars.$gray;
-        font-family: 'Montserrat', sans-serif;
         display: flex;
         justify-content: flex-start;
-        // align-items: center;
         padding: 25px;
 
+        @media (max-width: 1000px) {
+            justify-content: center;
+        }
+
         .contentRight {
-            // width: 855px;
-            width: min-content;
+            width: 655px;
+            // width: min-content;
             padding-top: 100px;
+
+            @media (max-width: 1810px) {
+                width: min-content;
+            }
+            @media (max-width: 1000px) {
+                width: 655px;
+            }
+            @media (max-width: 905px) {
+                width: min-content;
+            }
 
             .formations {
                 font-size: 25px;
                 font-weight: 900;
                 margin-bottom: 25px;
+
+                @media (max-width: 550px) {
+                    font-size: 16px;
+                }
             }
     
             .formationsContent {
                 display: flex;
+                flex-wrap: wrap;
                 justify-content: flex-start;
                 align-items: center;
                 gap: 15px;
-                flex-wrap: wrap;
                 
                 .formationBloc {
                     width: 320px;
@@ -112,6 +154,13 @@
                     border: 1px gray solid;
                     border-radius: 5px;
                     line-height: 20px;
+
+                    @media (max-width: 550px) {
+                        width: 250px;
+                    }
+                    @media (max-width: 270px) {
+                        width: 230px;
+                    }
         
                     .intitule {
                         font-size: 14px;
@@ -136,13 +185,17 @@
                 font-weight: 900;
                 margin-top: 45px;
                 margin-bottom: 25px;
+
+                @media (max-width: 550px) {
+                    font-size: 16px;
+                }
             }
     
             .competencesContent {
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
-                gap: 15px;
+                gap: 25px;
                 flex-wrap: wrap;
                 
                 .competencesNiveau {
@@ -154,6 +207,13 @@
                     border-radius: 5px;
                     line-height: 20px;
                     position: relative;
+
+                    @media (max-width: 550px) {
+                        width: 250px;
+                    }
+                    @media (max-width: 270px) {
+                        width: 230px;
+                    }
 
                     .niveau {
                         position: absolute;
