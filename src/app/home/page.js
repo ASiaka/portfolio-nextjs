@@ -1,7 +1,7 @@
 import styles from "@/app/home/home.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCss, faCss3, faCss3Alt, faHtml5, faJs, faReact, faSass } from "@fortawesome/free-brands-svg-icons";
-import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
+import { faCss, faCss3, faCss3Alt, faHtml5, faJs, faLaravel, faPhp, faReact, faSass, faSymfony } from "@fortawesome/free-brands-svg-icons";
+import { faDatabase, faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
 
@@ -17,6 +17,10 @@ export default function Home() {
                         <FontAwesomeIcon icon={faJs} className={styles.language} />
                         <FontAwesomeIcon icon={faReact} className={styles.language} />
                         <FontAwesomeIcon icon={faSass} className={styles.language} />
+                        <FontAwesomeIcon icon={faDatabase} className={styles.language} />
+                        <FontAwesomeIcon icon={faPhp} className={styles.language} />
+                        <FontAwesomeIcon icon={faSymfony} className={styles.language} />
+                        <FontAwesomeIcon icon={faLaravel} className={styles.language} />
                     </div>
                 </div>
             </div>
