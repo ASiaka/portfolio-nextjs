@@ -61,12 +61,27 @@
             padding: 15px;
             background-color: white;
             box-shadow: 0 0 10px -10px #2f4558;
+            color: white;
+            border: vars.$base 1px solid;
+            border-radius: 5px;
+            // position: relative;
+
+            // .voile {
+            //     width: 100%;
+            //     height: 100%;
+            //     position: absolute;
+            //     left: 0;
+            //     top: 0;
+            //     background-color: rgba(255, 255, 255, 0.504);
+            // }
 
             .title {
                 font-size: 1em;
                 font-weight: bold;
                 // margin-bottom: 15px;
                 margin-bottom: 0.469em;
+                background-color: #2f455870;
+                box-sizing: border-box;
             }
 
             .paragraph {
@@ -74,6 +89,8 @@
                 font-size: 0.938em;
                 // line-height: 20px;
                 line-height: 1.25em;
+                background-color: #2f455870;
+                box-sizing: border-box;
             }
 
             .button {
@@ -81,14 +98,16 @@
                 height: 30px;
                 border-radius: 5px;
                 border: none;
-                background-color: rgba(165, 42, 42, 0.8);
+                // background-color: rgba(165, 42, 42, 0.8);
+                background-color: #2f455880;
                 color: vars.$gray;
                 // margin-top: 15px;
                 margin-top: 0.938em;
                 transition: 1.3s;
 
                 &:hover {
-                    background-color: brown;
+                    // background-color: brown;
+                    background-color: #2f4558;
                     transition: 1.3s;
                 }
 
@@ -105,6 +124,9 @@
             grid-column-end: span 3;
             grid-row-start: 2;
             grid-row-end: 5;
+            background-image: url("../../../public/img/rhD2.png");
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         .projetTwo {
             // background-color: green;
@@ -112,11 +134,17 @@
             grid-column-end: 7;
             grid-row-start: 2;
             grid-row-end: span 3;
+            background-image: url("../../../public/img/rhD1.png");
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         .projetThree {
             // background-color: blue;
             grid-column: 1 / span 2;
             grid-row: 5 / span 2;
+            background-image: url("../../../public/img/smD.png");
+            background-repeat: no-repeat;
+            background-size: cover;
 
             @media (max-width: 900px) {
                grid-row: 5 / span 3; 
@@ -129,6 +157,9 @@
         .projetFour {
             // background-color: red;
             grid-area: 5 / 3 / 7 / 5;
+            background-image: url("../../../public/img/pfD.png");
+            background-repeat: no-repeat;
+            background-size: cover;
 
             @media (max-width: 900px) {
                grid-area: 5 / 3 / 8 / 5;
@@ -140,6 +171,9 @@
         .projetFive {
             // background-color: orange;
             grid-area: 5 / 5 / span 2 / span 2;
+            background-image: url("../../../public/img/ebD.png");
+            background-repeat: no-repeat;
+            background-size: cover;
 
             @media (max-width: 900px) {
                grid-area: 5 / 5 / span 3 / span 2;

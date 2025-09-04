@@ -10,6 +10,7 @@ export default function Projets() {
                     <p className={styles.subTitle}>Projets realisés en html, css, javaScript, reactJs, scss.</p>
                 </div>
                 <div className={styles.projet + " " + styles.projetOne}>
+                    {/* <div className={styles.voile}></div> */}
                     <h3 className={styles.title}>RevisionHelp</h3>
                     <p className={styles.paragraph}>Application d&apos;aide à la révision du vocabulaire.</p>
                     <p className={styles.paragraph}>Réalisé en reactJs / scss.</p>

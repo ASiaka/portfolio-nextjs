@@ -1,10 +1,14 @@
 import styles from "@/app/parcours/parcours.module.scss";
 import parcoursData  from "../lib/data";
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
 export default function Parcours() {
 
     return (
         <main id="parcours" className={styles.parcours}>
+            {/* <FontAwesomeIcon icon={faDownload} className={styles.download} /> */}
             <div className={styles.parcoursLeft}>
                 <div className={styles.contentLeft}>
                     <h3 className={styles.experiences}>EXPERIENCES</h3>
