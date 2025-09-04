@@ -43,7 +43,7 @@
         .topContent {
             // width: 80%;
             // height: 80%;
-            // max-width: 1200px;
+            max-width: 1300px;
             display: flex;
             // gap: 25px;
             gap: 1.563em;
@@ -86,14 +86,18 @@
         .bottomContent {
             // width: 80%;
             // height: 80%;
-            // max-width: 1300px;
+            max-width: 1350px;
             display: flex;
             flex-wrap: wrap;
             // gap: 15px;
-            gap: 0.938em;
+            gap: 2.5em;
             justify-content: center;
             align-items: center;
             padding: 15px 40px;
+
+            @media (max-width: 1000px) {
+                gap: 1.5em;
+            }
 
             @media (max-width: 550px) {
                 padding: 15px;
@@ -113,19 +117,19 @@
                 
                 .title {
                     // font-size: 45px;
-                    font-size: 2.831em;
+                    font-size: 3.1em;
                     font-weight: 900;
                 }
 
                 .subtitle {
                     // font-size: 30px;
-                    font-size: 1.875em;
+                    font-size: 1.95em;
                     font-weight: 900;
                     color: brown;
                     
                     .dates {
                         // font-size: 16px;
-                        font-size: 0.6em;
+                        font-size: 0.63em;
                         font-weight: 700;
                         letter-spacing: 0.0001em;
                         color: gray;
@@ -134,7 +138,7 @@
 
                 .info {
                     // font-size: 16px;
-                    font-size: 1.1em;
+                    font-size: 1.18em;
                     font-weight: 700;
                     letter-spacing: 0.01em;
                     color: gray;

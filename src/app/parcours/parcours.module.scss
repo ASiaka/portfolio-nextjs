@@ -9,7 +9,7 @@
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
     display: grid;
-    grid-template: 1fr / 6fr 4fr;
+    grid-template: 1fr / 1.3fr 1fr;
     font-size: 16px;
 
     @media (max-width: 1000px) {
@@ -20,20 +20,21 @@
         background-color: vars.$blue;
         display: flex;
         justify-content: flex-end;
-        align-items: center;
-        padding: 0 25px 25px;
+        padding: 0 25px 50px;
         color: white;
-
+        
         @media (max-width: 1000px) {
             justify-content: center;
+            // align-items: center;
         }
-        
-        .contentLeft {
-            max-width: 855px;
+            
+            .contentLeft {
+                // max-width: 855px;
+                max-width: 856px;
+                padding-top: 100px;
             
             @media (max-width: 1810px) {
                 width: min-content;
-                padding-top: 100px;
             }
             @media (max-width: 1000px) {
                 width: max-content;
@@ -61,9 +62,9 @@
                 gap: 15px;
                 flex-wrap: wrap;
 
-                @media (max-width: 1810px) {
-                    justify-content: center;
-                }
+                // @media (max-width: 1810px) {
+                //     justify-content: center;
+                // }
                 
                 .experienceBloc {
                     width: 420px;
@@ -117,14 +118,15 @@
     .parcoursRight {
         display: flex;
         justify-content: flex-start;
-        padding: 25px;
+        padding: 0 25px 50px;
 
         @media (max-width: 1000px) {
             justify-content: center;
         }
 
         .contentRight {
-            width: 655px;
+            // width: 655px;
+            width: 656px;
             // width: min-content;
             padding-top: 100px;
 
@@ -210,10 +212,10 @@
     
             .competencesContent {
                 display: flex;
+                flex-wrap: wrap;
                 justify-content: flex-start;
                 align-items: center;
-                gap: 25px;
-                flex-wrap: wrap;
+                gap: 15px;
                 
                 .competencesNiveau {
                     width: 320px;
