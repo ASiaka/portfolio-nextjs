@@ -28,15 +28,16 @@ export default function Home() {
                 <div className={styles.bottomContent}>
                     <div className={styles.titleContent}>
                         <h3 className={styles.title}>CONCEPTEUR D&apos;APPLICATIONS WEB</h3>
-                        <h4 className={styles.subtitle}>EN ALTERNANCE <span className={styles.dates}>(12 mois - entrée : fin Octobre)</span></h4>
+                        <h4 className={styles.subtitle}>ALTERNANCE <span className={styles.dates}>Durée: 12 mois - entrée: fin Octobre</span></h4>
+                        <p className={styles.info}>Rythme: 1 semaine en formation / 2 semaines en entreprise</p>
                     </div>
                     <p className={styles.presentation}>
-                        Passionné par le développement web, j&apos;ai suivi une formation il y a deux 
-                        ans pour acquérir les bases du métier. Depuis, j&apos;ai continué à développer 
-                        des projets personnels en HTML, CSS, JavaScript et React, afin de 
-                        maintenir et d&apos;approfondir mes compétences. Aujourd&apos;hui, je souhaite 
-                        concrétiser mon projet professionnel en intégrant une alternance pour 
-                        renforcer mes connaissances et apprendre de nouveaux langages.
+                        Après une première formation en développement web et une expérience 
+                        pratique en React, j&apos;ai continué à développer des projets personnels 
+                        pour maintenir mes compétences. Je souhaite aujourd&apos;hui intégrer 
+                        une alternance en Conception et Développement d&apos;Applications 
+                        afin de renforcer mes connaissances, découvrir de nouvelles 
+                        technologies et contribuer activement aux projets d&apos;une entreprise.
                     </p>
                 </div>
             </div>
