@@ -12,6 +12,10 @@
     grid-template: 1fr / 1.3fr 1fr;
     font-size: 16px;
 
+    @media (max-width: 1810px) {
+            grid-template: 1fr 1.15fr / 1fr;    
+        }
+
     @media (max-width: 1000px) {
         display: block;
     }
@@ -23,9 +27,14 @@
         padding: 0 25px 50px;
         color: white;
         
-        @media (max-width: 1000px) {
+        // @media (max-width: 1000px) {
+        //     justify-content: center;
+        //     // align-items: center;
+        // }
+
+        @media (max-width: 1810px) {
             justify-content: center;
-            // align-items: center;
+            align-items: center;
         }
             
             .contentLeft {
@@ -34,7 +43,7 @@
                 padding-top: 100px;
             
             @media (max-width: 1810px) {
-                width: min-content;
+                // width: min-content;
             }
             @media (max-width: 1000px) {
                 width: max-content;
@@ -120,8 +129,14 @@
         justify-content: flex-start;
         padding: 0 25px 50px;
 
+        @media (max-width: 1810px) {
+            justify-content: center;
+            align-items: center;
+        }
+
         @media (max-width: 1000px) {
             justify-content: center;
+            align-items: center;
         }
 
         .contentRight {
@@ -131,7 +146,7 @@
             padding-top: 100px;
 
             @media (max-width: 1810px) {
-                width: min-content;
+                // width: min-content;
             }
             @media (max-width: 1000px) {
                 width: 655px;
