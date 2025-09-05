@@ -29,7 +29,7 @@ export default function Home() {
                     <div className={styles.titleContent}>
                         <h1 className={styles.title}>CONCEPTEUR D&apos;APPLICATIONS WEB</h1>
                         <h2 className={styles.subtitle}>ALTERNANCE <span className={styles.dates}>Durée: 12 mois - entrée: fin Octobre</span></h2>
-                        <h4 className={styles.info}>Rythme: 1 semaine en formation / 2 semaines en entreprise</h4>
+                        <p className={styles.info}>Rythme: 1 semaine en formation / 2 semaines en entreprise</p>
                     </div>
                     <p className={styles.presentation}>
                         Après une première formation en développement web et une expérience 

@@ -64,16 +64,6 @@
             color: white;
             border: vars.$base 1px solid;
             border-radius: 5px;
-            // position: relative;
-
-            // .voile {
-            //     width: 100%;
-            //     height: 100%;
-            //     position: absolute;
-            //     left: 0;
-            //     top: 0;
-            //     background-color: rgba(255, 255, 255, 0.504);
-            // }
 
             .title {
                 font-size: 1em;
@@ -81,6 +71,7 @@
                 // margin-bottom: 15px;
                 margin-bottom: 0.469em;
                 background-color: #2f455870;
+                width: fit-content;
                 box-sizing: border-box;
             }
 
@@ -90,30 +81,34 @@
                 // line-height: 20px;
                 line-height: 1.25em;
                 background-color: #2f455870;
+                width: fit-content;
                 box-sizing: border-box;
             }
 
-            .button {
-                width: 90px;
-                height: 30px;
-                border-radius: 5px;
-                border: none;
-                // background-color: rgba(165, 42, 42, 0.8);
-                background-color: #2f455880;
-                color: vars.$gray;
-                // margin-top: 15px;
-                margin-top: 0.938em;
-                transition: 1.3s;
-
-                &:hover {
-                    // background-color: brown;
-                    background-color: #2f4558;
+            .link {
+                
+                .button {
+                    width: 90px;
+                    height: 30px;
+                    border-radius: 5px;
+                    border: none;
+                    // background-color: rgba(165, 42, 42, 0.8);
+                    background-color: #2f455880;
+                    color: vars.$gray;
+                    // margin-top: 15px;
+                    margin-top: 0.938em;
                     transition: 1.3s;
-                }
-
-                @media (max-width: 600px) {
-                    width: 70px;
-                    height: 25px;
+                    
+                    &:hover {
+                        // background-color: brown;
+                        background-color: #2f4558;
+                        transition: 1.3s;
+                    }
+                    
+                    @media (max-width: 600px) {
+                        width: 70px;
+                        height: 25px;
+                    }
                 }
             }
         }

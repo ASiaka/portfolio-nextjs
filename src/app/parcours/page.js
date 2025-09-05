@@ -8,7 +8,6 @@ export default function Parcours() {
 
     return (
         <main id="parcours" className={styles.parcours}>
-            {/* <FontAwesomeIcon icon={faDownload} className={styles.download} /> */}
             <div className={styles.parcoursLeft}>
                 <div className={styles.contentLeft}>
                     <h3 className={styles.experiences}>EXPERIENCES</h3>
@@ -43,8 +42,8 @@ export default function Parcours() {
                                         <p className={styles.taches1}>{i.taches1}</p>
                                         <p className={styles.taches2}>{i.taches2}</p>
                                     </div>
-                                        )
-                                    })
+                                )
+                            })
                         }
                     </div>
                     <h3 className={styles.competences}>COMPETENCES</h3>
@@ -90,9 +89,12 @@ export default function Parcours() {
                                             (k === 4 || k === 5) &&
                                             <p className={styles.intitule} key={k}>{i}</p>
                                         )
-                                    })
-                                }
+                                })
+                            }
                         </div>
+                        <a href="/cv/cv_as.pdf" download className={styles.downloadLink}>
+                            <FontAwesomeIcon icon={faDownload} className={styles.download} />
+                        </a>
                     </div>
                 </div>
             </div>

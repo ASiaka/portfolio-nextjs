@@ -11,7 +11,6 @@
     display: grid;
     grid-template: 1fr / 1.3fr 1fr;
     font-size: 16px;
-    // position: relative;
 
     @media (max-width: 1810px) {
             grid-template: 1fr 1.15fr / 1fr;    
@@ -20,14 +19,6 @@
     @media (max-width: 1000px) {
         display: block;
     }
-
-    // .download {
-    //     font-size: 25px;
-    //     color: white;
-    //     position: absolute;
-    //     top: 15px;
-    //     right: 15px;
-    // }
 
     .parcoursLeft {
         background-color: vars.$blue;
@@ -154,9 +145,9 @@
             // width: min-content;
             padding-top: 100px;
 
-            @media (max-width: 1810px) {
+            // @media (max-width: 1810px) {
                 // width: min-content;
-            }
+            // }
             @media (max-width: 1000px) {
                 width: 655px;
             }
@@ -308,6 +299,17 @@
                         font-size: 14px;
                         font-weight: 600;
                         text-transform: uppercase;
+                    }
+                }
+
+                
+                .downloadLink {
+                    width: min-content;
+                    position: static;
+
+                    .download {
+                        font-size: 25px;
+                        color: vars.$base;
                     }
                 }
             }
