@@ -128,6 +128,16 @@
                 }
             }
         }
+
+        .success {
+            color: green;
+            margin-top: 10px;
+        }
+
+        .error {
+            color: red;
+            margin-top: 10px;
+        }
     }
 
     .bottomContent {

@@ -1,36 +1,71 @@
-'use client'
+'use client';
 
 import styles from "@/app/contact/contact.module.scss";
-import { faGithub, faGithubAlt, faGithubSquare, faLinkedinIn, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedinIn, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
+  const form = useRef();
+  const [sent, setSent] = useState(false);
+  const [error, setError] = useState(false);
 
-    return (
-        <main id="contact" className={styles.contact}>
-            <div className={styles.formContent}>
-                <h1 className={styles.title}>Contact</h1>
-                <form className={styles.form}>
-                    <input type="text" name="name" className={styles.name} placeholder="nom" />
-                    <input type="email" name="email" className={styles.email} placeholder="mail" />
-                    <textarea name="message" className={styles.message} placeholder="message" />
-                    <button type="submit" name="button" className={styles.button}>Envoyer</button>
-                </form>
-            </div>
-            <div className={styles.bottomContent}>
-                <div className={styles.reseaux} >
-                    <Link href="https://www.linkedin.com/in/siakaandhum/" className={styles.link} target="blank">
-                        <FontAwesomeIcon icon={faLinkedinIn} className={styles.reseau} />
-                    </Link>
-                    <Link href="https://github.com/ASiaka" className={styles.link} target="blank">
-                        <FontAwesomeIcon icon={faGithub} className={styles.reseau} />
-                    </Link>
-                    <Link href="" className={styles.link} target="blank">
-                        <FontAwesomeIcon icon={faWhatsapp} className={styles.reseau} />
-                    </Link>
-                </div>
-            </div>
-        </main>
-    )
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_9xkv74r",
+        "template_j4bmokp",
+        form.current,
+        "h2JChoIcV98Vo9yBm"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setSent(true);
+          setError(false);
+          form.current.reset();
+        },
+        (err) => {
+          console.error(err.text);
+          setError(true);
+          setSent(false);
+        }
+      );
+  };
+
+  return (
+    <main id="contact" className={styles.contact}>
+      <div className={styles.formContent}>
+        <h1 className={styles.title}>Contact</h1>
+
+        <form ref={form} onSubmit={sendEmail} className={styles.form}>
+          <input type="text" name="user_name" className={styles.name} placeholder="Nom" required />
+          <input type="email" name="user_email" className={styles.email} placeholder="Email" required />
+          <textarea name="message" className={styles.message} placeholder="Message" required />
+          <button type="submit" className={styles.button}>Envoyer</button>
+        </form>
+
+        {sent && <p className={styles.success}>Message envoyé avec succès !</p>}
+        {error && <p className={styles.error}>Une erreur est survenue. Veuillez réessayer.</p>}
+      </div>
+
+      <div className={styles.bottomContent}>
+        <div className={styles.reseaux}>
+          <Link href="https://www.linkedin.com/in/siakaandhum/" className={styles.link} target="_blank">
+            <FontAwesomeIcon icon={faLinkedinIn} className={styles.reseau} />
+          </Link>
+          <Link href="https://github.com/ASiaka" className={styles.link} target="_blank">
+            <FontAwesomeIcon icon={faGithub} className={styles.reseau} />
+          </Link>
+          <Link href="https://wa.me/+33665109836" className={styles.link} target="_blank">
+            <FontAwesomeIcon icon={faWhatsapp} className={styles.reseau} />
+          </Link>
+        </div>
+      </div>
+    </main>
+  );
 }
