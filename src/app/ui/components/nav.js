@@ -6,6 +6,9 @@ import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import Image from "next/image";
+import logoAsDevB from "../../../../public/img/logoAsDevB.png";
+import logoAsDevG from "../../../../public/img/logoAsDevG.png";
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,30 +34,25 @@ export default function Nav() {
 
   const navStyle = {
     backgroundColor:
-      burgerMenu && isOpen ? "#2F4558" : "rgba(255, 255, 255, 0.5)",
-    color: burgerMenu && isOpen ? "#F5F5F5" : "#2F4558",
+    burgerMenu && isOpen ? "#0c2f40" : "rgba(255, 255, 255, 0.5)",
+    color: burgerMenu && isOpen ? "#F5F5F5" : "#0c2f40",
     height: burgerMenu && isOpen ? "100%" : "70px",
   };
-
-  const iconColor = burgerMenu && isOpen ? "#F5F5F5" : "#2F4558";
 
   return (
     <nav className={styles.nav} style={navStyle}>
       <div className={styles.navContent}>
         <div className={styles.reseaux}>
           <Link
-            href="https://www.linkedin.com/in/siakaandhum/"
+            href="/"
             className={styles.link}
-            target="_blank"
           >
-            <FontAwesomeIcon icon={faLinkedin} className={styles.reseau} style={{ color: iconColor }} />
-          </Link>
-          <Link
-            href="https://github.com/ASiaka"
-            className={styles.link}
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faGithub} className={styles.reseau} style={{ color: iconColor }} />
+            <Image 
+              src={burgerMenu && isOpen ? logoAsDevG : logoAsDevB}
+              alt="logo AsDev"
+              className={styles.reseau}
+              onClick={() => setIsOpen(false)}
+            />
           </Link>
         </div>
 

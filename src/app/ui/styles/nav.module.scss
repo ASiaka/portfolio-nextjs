@@ -18,16 +18,13 @@
         align-items: center;
 
         .reseaux{
-            display: flex;
-            gap: 5px;
-            justify-content: center;
             
             .link {
                 text-decoration: none;
-                color: vars.$blue;
-                
+
                 .reseau {
-                    font-size: 20px;
+                    width: 75px;
+                    height: auto;
                 }
             }
         }
@@ -45,7 +42,7 @@
 
                 .link {
                     text-decoration: none;
-                    color: vars.$blue;
+                    color: vars.$base;
                 }
             }
         }
@@ -56,7 +53,7 @@
             flex-direction: column;
             gap: 25px;
             align-items: center;
-            background-color: vars.$blue;
+            // background-color: vars.$base;
             position: fixed;
             top: 100px;
             left: 0px;
@@ -67,7 +64,7 @@
 
                 .linkBM {
                     text-decoration: none;
-                    color: vars.$blue;
+                    color: vars.$base;
                     color: white;
                 }
             }
