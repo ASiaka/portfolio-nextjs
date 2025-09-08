@@ -16,6 +16,7 @@ import ebM from "../../../public/img/ebM.png";
 
 export default function Projets() {
     const [modeMobile, setModeMobile] = useState(false);
+    const [showDescription, setShowDescription] = useState("hidden");
 
     useEffect(() => {
         const handleResize = () => {
@@ -43,58 +44,113 @@ export default function Projets() {
                 </div>
                 <div
                     className={styles.projet + " " + styles.projetOne}
-                    style={{backgroundImage: modeMobile === true ? `url(${rhM2.src})` : `url(${rhD2.src})`}}
+                    style={{
+                        backgroundImage: modeMobile === true ? `url(${rhM2.src})` : `url(${rhD2.src})`,
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                    }}
+                    onMouseEnter={() => setShowDescription("showP1")}
+                    onMouseLeave={() => setShowDescription("hidden")}
                 >
-                    <h3 className={styles.title}>RevisionHelp</h3>
-                    <p className={styles.paragraph}>Application d&apos;aide à la révision du vocabulaire.</p>
-                    <p className={styles.paragraph}>Réalisé en reactJs / scss.</p>
-                    <Link href={"https://revisionhelp-nextjs.vercel.app/"} className={styles.link} target="_blank" rel="noopener noreferrer">
-                        <button className={styles.button}>Voir</button>
-                    </Link>
+                    <div
+                        className={styles.projetDescription}
+                        style={{visibility: showDescription === "showP1" ? "visible" : "hidden"}}
+                    >
+                        <h3 className={styles.title}>RevisionHelp</h3>
+                        <p className={styles.paragraph}>Application d&apos;aide à la révision du vocabulaire.</p>
+                        <p className={styles.paragraph}>Réalisé en reactJs / scss.</p>
+                        <Link href={"https://revisionhelp-nextjs.vercel.app/"} className={styles.link} target="_blank" rel="noopener noreferrer">
+                            <button className={styles.button}>Voir</button>
+                        </Link>
+                    </div>
                 </div>
                 <div
                     className={styles.projet + " " + styles.projetTwo}
-                    style={{backgroundImage: modeMobile === true ? `url(${rhM1.src})` : `url(${rhD1.src})`}}
+                    style={{
+                        backgroundImage: modeMobile === true ? `url(${rhM1.src})` : `url(${rhD1.src})`,
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                    }}
+                    onMouseEnter={() => setShowDescription("showP2")}
+                    onMouseLeave={() => setShowDescription("hidden")}
                 >
-                    <h3 className={styles.title}>RevisionHelp</h3>
-                    <p className={styles.paragraph}>Application d&apos;aide à la révision du vocabulaire.</p>
-                    <p className={styles.paragraph}>Réalisé en javaScript / html / css</p>
-                    <Link href={"https://help-beta-liard.vercel.app/"} className={styles.link} target="_blank" rel="noopener noreferrer">
-                        <button className={styles.button}>Voir</button>
-                    </Link>
+                    <div
+                        className={styles.projetDescription}
+                        style={{visibility: showDescription === "showP2" ? "visible" : "hidden"}}
+                    >  
+                        <h3 className={styles.title}>RevisionHelp</h3>
+                        <p className={styles.paragraph}>Application d&apos;aide à la révision du vocabulaire.</p>
+                        <p className={styles.paragraph}>Réalisé en javaScript / html / css</p>
+                        <Link href={"https://help-beta-liard.vercel.app/"} className={styles.link} target="_blank" rel="noopener noreferrer">
+                            <button className={styles.button}>Voir</button>
+                        </Link>
+                    </div>
                 </div>
                 <div
                     className={styles.projet + " " + styles.projetThree}
-                    style={{backgroundImage: modeMobile === true ? `url(${smM.src})` : `url(${smD.src})`}}
+                    style={{
+                        backgroundImage: modeMobile === true ? `url(${smM.src})` : `url(${smD.src})`,
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                    }}
+                    onMouseEnter={() => setShowDescription("showP3")}
+                    onMouseLeave={() => setShowDescription("hidden")}
                 >
-                    <h3 className={styles.title}>Sud Multiservices</h3>
-                    <p className={styles.paragraph}>Site vitrine pour</p>
-                    <p className={styles.paragraph}>un particulier</p>
-                    <Link href={"https://sud-multiservices.vercel.app/"} className={styles.link} target="_blank" rel="noopener noreferrer">
-                        <button className={styles.button}>Voir</button>
-                    </Link>
+                    <div
+                        className={styles.projetDescription}
+                        style={{visibility: showDescription === "showP3" ? "visible" : "hidden"}}
+                    >  
+                        <h3 className={styles.title}>Sud Multiservices</h3>
+                        <p className={styles.paragraph}>Site vitrine pour</p>
+                        <p className={styles.paragraph}>un particulier</p>
+                        <Link href={"https://sud-multiservices.vercel.app/"} className={styles.link} target="_blank" rel="noopener noreferrer">
+                            <button className={styles.button}>Voir</button>
+                        </Link>
+                    </div>
                 </div>
                 <div
                     className={styles.projet + " " + styles.projetFour}
-                    style={{backgroundImage: modeMobile === true ? `url(${pfM.src})` : `url(${pfD.src})`}}
+                    style={{
+                        backgroundImage: modeMobile === true ? `url(${pfM.src})` : `url(${pfD.src})`,
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                    }}
+                    onMouseEnter={() => setShowDescription("showP4")}
+                    onMouseLeave={() => setShowDescription("hidden")}
                 >
-                    <h3 className={styles.title}>Portfolio 1</h3>
-                    <p className={styles.paragraph}>Mon premier portfolio</p>
-                    <p className={styles.paragraph}>Réalisé en reactJs / scss.</p>
-                    <Link href={"#projets"} className={styles.link}>
-                        <button className={styles.button}>Voir</button>
-                    </Link>
+                    <div
+                        className={styles.projetDescription}
+                        style={{visibility: showDescription === "showP4" ? "visible" : "hidden"}}
+                    >  
+                        <h3 className={styles.title}>Portfolio 1</h3>
+                        <p className={styles.paragraph}>Mon premier portfolio</p>
+                        <p className={styles.paragraph}>Réalisé en reactJs / scss.</p>
+                        <Link href={"#projets"} className={styles.link}>
+                            <button className={styles.button}>Voir</button>
+                        </Link>
+                    </div>
                 </div>
                 <div
                     className={styles.projet + " " + styles.projetFive}
-                    style={{backgroundImage: modeMobile === true ? `url(${ebM.src})` : `url(${ebD.src})`}}
+                    style={{
+                        backgroundImage: modeMobile === true ? `url(${ebM.src})` : `url(${ebD.src})`,
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                    }}
+                    onMouseEnter={() => setShowDescription("showP5")}
+                    onMouseLeave={() => setShowDescription("hidden")}
                 >
-                    <h3 className={styles.title}>eb</h3>
-                    <p className={styles.paragraph}>site immobilier.</p>
-                    <p className={styles.paragraph}>Réalisé en reactJs / scss.</p>
-                    <Link href={"https://eb-eight.vercel.app/"} className={styles.link} target="_blank" rel="noopener noreferrer">
-                        <button className={styles.button}>Voir</button>
-                    </Link>
+                    <div
+                        className={styles.projetDescription}
+                        style={{visibility: showDescription === "showP5" ? "visible" : "hidden"}}
+                    >  
+                        <h3 className={styles.title}>eb</h3>
+                        <p className={styles.paragraph}>site immobilier.</p>
+                        <p className={styles.paragraph}>Réalisé en reactJs / scss.</p>
+                        <Link href={"https://eb-eight.vercel.app/"} className={styles.link} target="_blank" rel="noopener noreferrer">
+                            <button className={styles.button}>Voir</button>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </main>
