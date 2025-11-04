@@ -27,17 +27,14 @@ export default function Home() {
             <div className={styles.homeBottom}>
                 <div className={styles.bottomContent}>
                     <div className={styles.titleContent}>
-                        <h1 className={styles.title}>CONCEPTEUR D&apos;APPLICATIONS WEB</h1>
-                        <h2 className={styles.subtitle}>ALTERNANCE <span className={styles.dates}>Durée: 12 mois - entrée: fin Octobre</span></h2>
-                        <p className={styles.info}>Rythme: 1 semaine en formation / 2 semaines en entreprise</p>
+                        <h1 className={styles.title}>CONCEPTEUR DÉVELOPPEUR <span className={styles.titleSpan}>D&apos;APPLICATIONS</span></h1>
                     </div>
                     <p className={styles.presentation}>
-                        Après une première formation en développement web et une expérience 
-                        pratique en React, j&apos;ai continué à développer des projets personnels 
-                        pour maintenir mes compétences. Je souhaite aujourd&apos;hui intégrer 
-                        une alternance en Conception et Développement d&apos;Applications 
-                        afin de renforcer mes connaissances, découvrir de nouvelles 
-                        technologies et contribuer activement aux projets d&apos;une entreprise.
+                        Après une première formation en développement web et une expérience pratique en React, 
+                        j&apos;ai poursuivi mon apprentissage en réalisant différents projets personnels afin de consolider et d&apos;actualiser mes compétences. 
+                        Aujourd&apos;hui, je souhaite intégrer la formation Concepteur Développeur d&apos;Applications afin de renforcer mes connaissances, 
+                        approfondir mes compétences et découvrir de nouvelles technologies. 
+                        Mon objectif est de devenir un concepteur-développeur capable de créer des applications performantes et adaptées aux besoins des entreprises.
                     </p>
                 </div>
             </div>
