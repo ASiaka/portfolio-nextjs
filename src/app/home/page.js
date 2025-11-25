@@ -48,7 +48,7 @@ export default function Home() {
                             intitule === "alternance" && 
                                 <>
                                     <h1 className={styles.title}>CONCEPTEUR D&apos;APPLICATIONS WEB</h1>
-                                    <h2 className={styles.subtitle}>ALTERNANCE <span className={styles.dates}>Durée: 12 mois, Rentrées toute l'année</span></h2>
+                                    <h2 className={styles.subtitle}>ALTERNANCE <span className={styles.dates}>Durée: 12 mois, Rentrées toute l&apos;année</span></h2>
                                     <p className={styles.info}>Rythme: 1 semaine en formation / 2 semaines en entreprise</p>
                                 </>
                         }
@@ -57,24 +57,24 @@ export default function Home() {
                             intitule === "emploi" && 
                                 <p className={styles.presentation}>
                                     Après une première formation en développement web et une
-                                    expérience pratique, j'ai continué à développer des projets personnels
-                                    en JavaScript, React, Next.js et PHP afin de maintenir et d'élargir mes
-                                    compétences. Aujourd'hui, je souhaite intégrer une entreprise en tant
+                                    expérience pratique, j&apos;ai continué à développer des projets personnels
+                                    en JavaScript, React, Next.js et PHP afin de maintenir et d&apos;élargir mes
+                                    compétences. Aujourd&apos;hui, je souhaite intégrer une entreprise en tant
                                     que développeur web afin de mettre à profit mes connaissances,
                                     renforcer et augmenter mes compétences, découvrir de nouvelles
-                                    technologies et contribuer activement aux projets de l'équipe.
+                                    technologies et contribuer activement aux projets de l&apos;équipe.
                                 </p>
                         }
                         {
                             intitule === "alternance" && 
                                 <p className={styles.presentation}>
                                     Après une première formation en développement web et une expérience
-                                    pratique, j'ai continué à développer des projets personnels en JavaScript,
-                                    React, Next.js et PHP afin de maintenir et d'élargir mes compétences.
-                                    Aujourd'hui, je souhaite intégrer une entreprise dans le cadre d'une alternance
-                                    en Conception et Développement d'Applications afin de mettre à profit
+                                    pratique, j&apos;ai continué à développer des projets personnels en JavaScript,
+                                    React, Next.js et PHP afin de maintenir et d&apos;élargir mes compétences.
+                                    Aujourd&apos;hui, je souhaite intégrer une entreprise dans le cadre d&apos;une alternance
+                                    en Conception et Développement d&apos;Applications afin de mettre à profit
                                     mes connaissances, renforcer et augmenter mes compétences, découvrir
-                                    de nouvelles technologies et contribuer activement aux projets de l'équipe.
+                                    de nouvelles technologies et contribuer activement aux projets de l&apos;équipe.
                                 </p>
                         }
                 </div>
