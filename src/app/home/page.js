@@ -1,9 +1,22 @@
+'use client'
+
 import styles from "@/app/home/home.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCss, faCss3, faCss3Alt, faHtml5, faJs, faLaravel, faPhp, faReact, faSass, faSymfony } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase, faLaptopCode } from "@fortawesome/free-solid-svg-icons";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+    const [intitule, setIntitule] = useState("alternance");
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            console.log("yes")
+            setIntitule(prev => prev === "alternance" ? "emploi" : "alternance");
+        }, 40000);
+
+        return () => clearInterval(interval);
+    }, []);
 
     return (
         <main id="accueil" className={styles.home}>
@@ -27,15 +40,43 @@ export default function Home() {
             <div className={styles.homeBottom}>
                 <div className={styles.bottomContent}>
                     <div className={styles.titleContent}>
-                        <h1 className={styles.title}>CONCEPTEUR DÉVELOPPEUR <span className={styles.titleSpan}>D&apos;APPLICATIONS</span></h1>
+                        {
+                            intitule === "emploi" && 
+                                <h1 className={styles.title}><span className={styles.titleSpan}>DÉVELOPPEUR</span> WEB ET WEB MOBILE</h1>
+                        }
+                        {
+                            intitule === "alternance" && 
+                                <>
+                                    <h1 className={styles.title}>CONCEPTEUR D&apos;APPLICATIONS WEB</h1>
+                                    <h2 className={styles.subtitle}>ALTERNANCE <span className={styles.dates}>Durée: 12 mois, Rentrées toute l'année</span></h2>
+                                    <p className={styles.info}>Rythme: 1 semaine en formation / 2 semaines en entreprise</p>
+                                </>
+                        }
                     </div>
-                    <p className={styles.presentation}>
-                        Après une première formation en développement web et une expérience pratique en React, 
-                        j&apos;ai poursuivi mon apprentissage en réalisant différents projets personnels afin de consolider et d&apos;actualiser mes compétences. 
-                        Aujourd&apos;hui, je souhaite intégrer la formation Concepteur Développeur d&apos;Applications afin de renforcer mes connaissances, 
-                        approfondir mes compétences et découvrir de nouvelles technologies. 
-                        Mon objectif est de devenir un concepteur-développeur capable de créer des applications performantes et adaptées aux besoins des entreprises.
-                    </p>
+                        {
+                            intitule === "emploi" && 
+                                <p className={styles.presentation}>
+                                    Après une première formation en développement web et une
+                                    expérience pratique, j'ai continué à développer des projets personnels
+                                    en JavaScript, React, Next.js et PHP afin de maintenir et d'élargir mes
+                                    compétences. Aujourd'hui, je souhaite intégrer une entreprise en tant
+                                    que développeur web afin de mettre à profit mes connaissances,
+                                    renforcer et augmenter mes compétences, découvrir de nouvelles
+                                    technologies et contribuer activement aux projets de l'équipe.
+                                </p>
+                        }
+                        {
+                            intitule === "alternance" && 
+                                <p className={styles.presentation}>
+                                    Après une première formation en développement web et une expérience
+                                    pratique, j'ai continué à développer des projets personnels en JavaScript,
+                                    React, Next.js et PHP afin de maintenir et d'élargir mes compétences.
+                                    Aujourd'hui, je souhaite intégrer une entreprise dans le cadre d'une alternance
+                                    en Conception et Développement d'Applications afin de mettre à profit
+                                    mes connaissances, renforcer et augmenter mes compétences, découvrir
+                                    de nouvelles technologies et contribuer activement aux projets de l'équipe.
+                                </p>
+                        }
                 </div>
             </div>
         </main>

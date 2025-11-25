@@ -41,6 +41,7 @@ export default function Projets() {
                 <div className={styles.titleContent}>
                     <h1 className={styles.title}>Projets</h1>
                     <p className={styles.subTitle}>Projets realisés en html, css, javaScript, reactJs, scss.</p>
+                    <p style={{color: "gray", fontSize: "12px"}}>Bientôt disponible : «<span style={{fontWeight: "bold"}}>Alifab</span>» React, Nextjs, SCSS / «<span style={{fontWeight: "bold"}}>JalQart</span>» PHP, SQL, PhpMyAdmin</p>
                 </div>
                 <div
                     className={styles.projet + " " + styles.projetOne}

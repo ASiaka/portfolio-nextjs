@@ -28,10 +28,10 @@
         display: grid;
         gap: 15px;
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: 50px repeat(5, 1fr);
+        grid-template-rows: auto repeat(5, 1fr);
 
         @media (max-width: 900px) {
-            grid-template-rows: 50px repeat(6, 1fr);
+            grid-template-rows: auto repeat(6, 1fr);
         }
         @media (max-width: 600px) {
             width: 90%;
@@ -47,11 +47,12 @@
             .title {
                 font-size: 25px;
                 font-weight: 900;
-                margin-bottom: 5px;
+                margin: 5px 0;
             }
 
             .subTitle {
                 font-weight: 500;
+                margin-bottom: 5px;
             }
         }
 

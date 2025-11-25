@@ -1,6 +1,5 @@
 import styles from "@/app/parcours/parcours.module.scss";
 import parcoursData  from "../lib/data";
-import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
@@ -22,8 +21,8 @@ export default function Parcours() {
                                         <p className={styles.taches1}>{i.taches1}</p>
                                         <p className={styles.taches2}>{i.taches2}</p>
                                     </div>
-                                        )
-                                    })
+                                )
+                            })
                         }
                     </div>
                 </div>
@@ -92,9 +91,16 @@ export default function Parcours() {
                                 })
                             }
                         </div>
-                        <a href="/cv/cv_as.pdf" download className={styles.downloadLink}>
-                            <FontAwesomeIcon icon={faDownload} className={styles.download} />
-                        </a>
+                        <div className={styles.mesCv}>
+                            <a href="/cv/CV_ASiaka.pdf" download className={styles.downloadLink}>
+                                <FontAwesomeIcon icon={faDownload} className={styles.download} />
+                                CV_Emploi
+                            </a>
+                            <a href="/cv/CV_ASiaka_alternance.pdf" download className={styles.downloadLink}>
+                                <FontAwesomeIcon icon={faDownload} className={styles.download} />
+                                CV_Alternance
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
