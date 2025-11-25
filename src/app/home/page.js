@@ -39,6 +39,8 @@ export default function Home() {
             </div>
             <div className={styles.homeBottom}>
                 <div className={styles.bottomContent}>
+                    <div className={styles.prev} onClick={() => setIntitule(prev => prev === "alternance" ? "emploi" : "alternance")}>&lt;</div>
+                    <div className={styles.next} onClick={() => setIntitule(prev => prev === "alternance" ? "emploi" : "alternance")}>&gt;</div>
                     <div className={styles.titleContent}>
                         {
                             intitule === "emploi" && 
@@ -49,7 +51,7 @@ export default function Home() {
                                 <>
                                     <h1 className={styles.title}>CONCEPTEUR D&apos;APPLICATIONS WEB</h1>
                                     <h2 className={styles.subtitle}>ALTERNANCE <span className={styles.dates}>Durée: 12 mois, Rentrées toute l&apos;année</span></h2>
-                                    <p className={styles.info}>Rythme: 1 semaine en formation / 2 semaines en entreprise</p>
+                                    <p className={styles.info}>Rythme: 1-2 semaine(s) en formation / 4-6 semaines en entreprise</p>
                                 </>
                         }
                     </div>

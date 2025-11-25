@@ -91,7 +91,7 @@ export default function Parcours() {
                                 })
                             }
                         </div>
-                        <div className={styles.mesCv}>
+                        {/* <div className={styles.mesCv}>
                             <a href="/cv/CV_ASiaka.pdf" download className={styles.downloadLink}>
                                 <FontAwesomeIcon icon={faDownload} className={styles.download} />
                                 CV_Emploi
@@ -100,7 +100,7 @@ export default function Parcours() {
                                 <FontAwesomeIcon icon={faDownload} className={styles.download} />
                                 CV_Alternance
                             </a>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

@@ -302,28 +302,28 @@
                     }
                 }
 
-                .mesCv {
-                    width: min-content;
-                    position: static;
-                    display: flex;
-                    gap: 25px;
-                    margin-top: 25px;
+                // .mesCv {
+                //     width: min-content;
+                //     position: static;
+                //     display: flex;
+                //     gap: 25px;
+                //     margin-top: 25px;
 
-                    .downloadLink {
-                        text-decoration: none;
-                        color: vars.$base;
-                        display: flex;
-                        flex-direction: column;
-                        gap: 7px;
-                        align-items: center;
-                        font-size: 12px;
+                //     .downloadLink {
+                //         text-decoration: none;
+                //         color: vars.$base;
+                //         display: flex;
+                //         flex-direction: column;
+                //         gap: 7px;
+                //         align-items: center;
+                //         font-size: 12px;
     
-                        .download {
-                            font-size: 25px;
-                            // color: vars.$base;
-                        }
-                    }
-                }
+                //         .download {
+                //             font-size: 25px;
+                //             // color: vars.$base;
+                //         }
+                //     }
+                // }
             }
         }
     }

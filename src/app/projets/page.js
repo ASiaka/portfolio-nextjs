@@ -40,7 +40,7 @@ export default function Projets() {
             <div className={styles.projetsContent}>
                 <div className={styles.titleContent}>
                     <h1 className={styles.title}>Projets</h1>
-                    <p className={styles.subTitle}>Projets realisés en html, css, javaScript, reactJs, scss.</p>
+                    <p className={styles.subTitle}>Techno utilisées : html, css, javaScript, React, Nextjs, scss.</p>
                     <p style={{color: "gray", fontSize: "12px"}}>Bientôt disponible : «<span style={{fontWeight: "bold"}}>Alifab</span>» React, Nextjs, SCSS / «<span style={{fontWeight: "bold"}}>JalQart</span>» PHP, SQL, PhpMyAdmin</p>
                 </div>
                 <div
