@@ -2,7 +2,9 @@
 
 import styles from "@/app/home/home.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCss, faCss3, faCss3Alt, faHtml5, faJs, faLaravel, faPhp, faReact, faSass, faSymfony } from "@fortawesome/free-brands-svg-icons";
+import { faCss3Alt, faHtml5, faJs, faLaravel, faPhp, faReact, faSass, faSymfony } from "@fortawesome/free-brands-svg-icons";
+import tailwindcss from "../../../public/img//tailwindcss.svg";
+import Image from "next/image";
 import { faDatabase, faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
 
@@ -30,6 +32,7 @@ export default function Home() {
                         <FontAwesomeIcon icon={faJs} className={styles.language} />
                         <FontAwesomeIcon icon={faReact} className={styles.language} />
                         <FontAwesomeIcon icon={faSass} className={styles.language} />
+                        <Image src={tailwindcss} style={{width: "1.3em", height: "auto"}} alt="Tailwind CSS" className={styles.language} />
                         <FontAwesomeIcon icon={faDatabase} className={styles.language} />
                         <FontAwesomeIcon icon={faPhp} className={styles.language} />
                         <FontAwesomeIcon icon={faSymfony} className={styles.language} />
