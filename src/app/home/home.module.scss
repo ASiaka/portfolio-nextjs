@@ -62,26 +62,30 @@
             align-items: center;
 
             .laptop {
-                // font-size: 70px;
                 font-size: 4.375em;
             }
 
             .title {
-                // font-size: 50px;
-                font-size: 3.125em;
+                font-size: 2.5em;
                 font-weight: 900;
-                color: #0c2f4020;
+                // color: #0c2f4020;
+                color: vars.$base;
                 text-transform: uppercase;
             }
 
             .langages {
                 display: flex;
-                // gap: 15px;
-                gap: 0.938em;
+                align-items: center;
+                gap: 1.5em;
 
                 .language {
-                    // font-size: 30px;
                     font-size: 1.875em;
+                    transition: 1.5s;
+
+                    &:hover {
+                        transform: scale(1.5);
+                        transition: 1.5s;
+                    }
                 }
             }
         }

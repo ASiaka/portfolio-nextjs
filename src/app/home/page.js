@@ -3,17 +3,24 @@
 import styles from "@/app/home/home.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCss3Alt, faHtml5, faJs, faLaravel, faPhp, faReact, faSass, faSymfony } from "@fortawesome/free-brands-svg-icons";
-import tailwindcss from "../../../public/img//tailwindcss.svg";
-import Image from "next/image";
 import { faDatabase, faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
+import Image from "next/image";
+import html from "../../../public/img//html.svg";
+import css from "../../../public/img//css.svg";
+import js from "../../../public/img//js.svg";
+import react from "../../../public/img//react.svg";
+import sass from "../../../public/img//sass.svg";
+import tailwindcss from "../../../public/img//tailwindcss.svg";
+import php from "../../../public/img//php.svg";
+import symfony from "../../../public/img//symfony.svg";
+import laravel from "../../../public/img//laravel.svg";
 
 export default function Home() {
     const [intitule, setIntitule] = useState("alternance");
 
     useEffect(() => {
         const interval = setInterval(() => {
-            console.log("yes")
             setIntitule(prev => prev === "alternance" ? "emploi" : "alternance");
         }, 40000);
 
@@ -27,16 +34,16 @@ export default function Home() {
                     <FontAwesomeIcon icon={faLaptopCode} className={styles.laptop} />
                     <h1 className={styles.title}>DevInProgress</h1>
                     <div className={styles.langages}>
-                        <FontAwesomeIcon icon={faHtml5} className={styles.language} />
-                        <FontAwesomeIcon icon={faCss3Alt} className={styles.language} />
-                        <FontAwesomeIcon icon={faJs} className={styles.language} />
-                        <FontAwesomeIcon icon={faReact} className={styles.language} />
-                        <FontAwesomeIcon icon={faSass} className={styles.language} />
-                        <Image src={tailwindcss} style={{width: "1.3em", height: "auto"}} alt="Tailwind CSS" className={styles.language} />
+                        <Image src={html} style={{height: "1.3em", width: "auto"}} alt="html" className={styles.language} />
+                        <Image src={css} style={{height: "1.3em", width: "auto"}} alt="css" className={styles.language} />
+                        <Image src={js} style={{height: "1.3em", width: "auto"}} alt="js" className={styles.language} />
+                        <Image src={react} style={{height: "1.3em", width: "auto"}} alt="react" className={styles.language} />
+                        <Image src={sass} style={{height: "1.3em", width: "auto"}} alt="sass" className={styles.language} />
+                        <Image src={tailwindcss} style={{height: "1.1em", width: "auto"}} alt="Tailwind CSS" className={styles.language} />
                         <FontAwesomeIcon icon={faDatabase} className={styles.language} />
-                        <FontAwesomeIcon icon={faPhp} className={styles.language} />
-                        <FontAwesomeIcon icon={faSymfony} className={styles.language} />
-                        <FontAwesomeIcon icon={faLaravel} className={styles.language} />
+                        <Image src={php} style={{height: "1.3em", width: "auto"}} alt="php" className={styles.language} />
+                        <Image src={symfony} style={{height: "1.3em", width: "auto"}} alt="symfony" className={styles.language} />
+                        <Image src={laravel} style={{height: "1.3em", width: "auto"}} alt="laravel" className={styles.language} />
                     </div>
                 </div>
             </div>
